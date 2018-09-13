@@ -1,0 +1,26 @@
+{
+  "name": "assighnment_one_react",
+  "version": "1.0.0",
+  "description": "React assighnment for day one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"parcel ./src/index.html --open"
+  },
+  "author": "Olije Favour",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.5.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "nodemon": "^1.18.4",
+    "parcel": "^1.9.7",
+    "prettier": "^1.14.2"
+  }
+}
