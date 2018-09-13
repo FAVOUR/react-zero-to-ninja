@@ -1,7 +1,7 @@
 import react from 'react'
 import ReactDOM from 'react-dom'
 
-function welcome () {
+function welcomeStatement () {
   return (
     <div>
       <h1>I am a product of functional component</h1>
@@ -9,4 +9,7 @@ function welcome () {
   )
 }
 
-ReactDOM.render(<welcome />, document.getElementById('root'))
+ReactDOM.render(
+  <h1>I am a product of functional component</h1>,
+  document.getElementById('root')
+)

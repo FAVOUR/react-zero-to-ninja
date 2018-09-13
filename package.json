@@ -1,25 +1,48 @@
 {
-  "name": "assighnment_one_react",
+  "name": "reactwithfunctionalcomponent",
   "version": "1.0.0",
-  "description": "React assighnment for day one",
-  "main": "index.js",
+  "description": "To Demonstrate react functional Component",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"parcel ./src/index.html --open"
+    "start": "parcel src/index.html --open",
+    "pretty": "prettier-eslint --write",
+    "precommit": "lint-staged"
   },
+  "lint-staged": {
+    "*.js": [
+      "npm run pretty",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FAVOUR/react-zero-to-ninja.git"
+  },
+  "keywords": [
+    "React",
+    "Zero-to-ninja",
+    "functional-component"
+  ],
   "author": "Olije Favour",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FAVOUR/react-zero-to-ninja/issues"
+  },
+  "homepage": "https://github.com/FAVOUR/react-zero-to-ninja#readme",
   "dependencies": {
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
-    "nodemon": "^1.18.4",
     "parcel": "^1.9.7",
     "prettier": "^1.14.2"
   }
